@@ -1,0 +1,69 @@
+<html>
+<head>
+
+ <meta charset="utf-8">
+ <title>Geethani's Assignment1_3</title>
+</head>
+<body>
+<h1>Montgomery County Public Library</h1>
+<h2>Overview of the Library</h2>
+<p>
+The Montgomery County Public Library System (MCPL) has 21 branches and serves the people in Montgomery County, Maryland.<br> The total service area population 1, 040,116 (IMLS Library Search and Compare Tool, 2018).<br> 
+People who live in the State of Maryland, and Virginia, and Washington DC also can use any MCPL library branch’s resources, services, and programs. 
+</p>
+<h3>Programs</h3>
+ <ol>
+ <li>Story time</li>
+   <ul>
+    <li>Baby</li>
+    <li>Todler</li>
+    <li>Pre-School</li>
+   </ul>
+ <li>STEM,and Coding clubs</li>
+   <ul>
+    <li>Elementory School</li>
+    <li>Middle School</li>
+    <li> High School<li>
+   </ul>
+ <li>Art and Craft Programs</li>
+   <ul>
+   <li>Teen</li>
+   <li>Adult</li>
+   </ul>
+ <li>Teen programs</li>
+   <ul>
+   <li>Teen</li>
+   </ul>
+ <li>Poetry, and Book clubs</li>
+   <ul>
+   <li>Teen</li>
+   <li>Adult</li>
+   </ul>
+</ol>
+<img Scr="spotlight-summer-reading-2021.JPG" width=500 height=300 alt="Reading"><br>
+<p>
+  Please visit here for<a href="https://mcpl.libnet.info/events?=undefined&r=thismonth&term=Virtual+Program">Virtual Programs during the Pandemic</a>
+</p>
+<h2>Early Literacy</h2>
+<p>
+Children who are read to from birth have a larger vocabulary and have a higher success rate of being lifelong readers and learners.&nbsp
+<strong><u>Reading to our children will not only instill a love of reading but will expand their vocabulary and build comprehension skills.</strong></u>
+</p>
+<h3>Library Resourses</h3>
+ <ol>
+ <li>Foreign Language Collection</li>
+ <li>Online resources</li>
+ <li>E-resources</li>
+ <li>Computers, Internet, laptops, printers & Copiers, and Hotspots</li>
+ <li>Print and digital materials</li>
+ <li>Assistive Technology for people with disabilities</li>
+<h5>About Assistive Technology:</h5>
+<p>
+Most branches have an assistive technology workstation designed for use by people who use a wheelchair, have low vision, are blind, or have a reading disability.<br> This station has a height-adjustable table, a magnifier that reads aloud printed text, and a computer with assistive software. <br>If you would like to use this workstation, please choose the <strong><u> "ADA" or "ATW" queue</strong></u> when signing up to use a public computer.
+<hr>
+</p>
+<p>
+The Montgomery County Public Libraries is the public library system for residents of Montgomery County, Maryland. Here is link to the <a href="https://www.montgomerycountymd.gov/library/"><strong>Montgomery County Public Library</a></strong>
+</p>
+</body>
+</html>
