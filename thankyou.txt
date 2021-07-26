@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Thank You Page</title>
+</head>
+<body>
+   <div style="background-color:pink">
+   <fieldset>	
+   <h3 style="color:red;"><center>Thank You for Your Feedback</center></h3>
+   </fieldset>
+   </div>
+</body>
+</html>
