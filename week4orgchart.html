@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week 4 Organisation Chart</title>
+</head>
+<head>
+<style>
+
+.container{					
+			background-color: beige;
+			height :100%;
+			max-width: 1300px;
+			padding: 0 10px;
+			margin: 0 auto;
+			
+		}
+
+#content{
+			width : 80%;
+			float : right; <!--Place texts on the right side -->
+			height : 100%;
+			background-color:beige;
+		         
+						
+		}
+
+.header-container{
+			margin-top: 0px;
+			background-color : white;
+			padding : 120 px;
+			
+		}		
+	
+:root {
+  --level-1: #ADD8E6;
+  --level-2: #ADD8E6;
+  --level-3: #ADD8E6;
+  --level-4: #ADD8E6;
+  --redline: red;
+}
+
+box {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  }
+
+ol {
+  list-style: none;
+}
+
+body {
+  margin: 100px 0 100px;
+  text-align: center;
+  
+}
+
+.rectangle {
+  position: relative;
+  padding: 20px; 
+  }
+
+/*root level 1*/
+
+.level-1 {
+  width: 50%;
+  margin: 0 auto 40px;
+  background: var(--level-1); 
+}
+
+ .level-1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background: var(--redline); 
+}
+/*level 2 in organisation chart*/
+
+.level-2-level {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); <!--property specifies the number (and the widths) of columns in a grid layout -->
+}
+
+.level-2-level::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20%;
+  width: 64%;
+  height: 2px;
+  background: var(--redline); 
+} 
+
+.level-2-level li {
+  position: relative;
+} 
+
+.level-2-level li::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background: var(--redline);
+} 
+
+.level-2 {
+  width: 70%;
+  margin: 0 auto 40px;
+  background: var(--level-2); 
+} 
+
+.level-2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background: var(--redline);
+} -->
+
+/*Level 3 in organisation chart*/
+
+.level-3-level {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+} 
+
+
+.level-3-level::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: calc(25% - 5px);
+  width: calc(47% + 1px);
+  height: 2px;
+  background: var(--redline);
+} 
+
+.level-3-level > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28%;
+  transform: translate(-25%, -100%);
+  width: 2px;
+  height: 20px;
+  background: var(--redline);
+} 
+
+.level-3 {
+  width: 70%;
+  margin: 0 auto 40px;
+  background: var(--level-3);
+} 
+
+/*Last level in the organisation chart*/
+
+.level-4-level {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+} 
+
+
+.level-4-level::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: 400px;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: var(--redline);
+} 
+
+.level-4 {
+  width: 70%;
+  margin: 0 auto 40px;
+  background: var(--level-4);
+} 
+
+
+#sidemenu{
+			width : 20%;
+			float : left;
+			background-color : #800000;
+            height : 100%; 
+			padding-bottom: 100%; 
+										
+		}	
+		
+#sidemenu li a{
+		color:yellow;
+		}
+		
+
+
+.footer-container{
+			clear : both;
+			max-width: 1400px;
+			background-color : pink;
+			text-align:center;
+			padding : 10px;
+			
+		}
+		
+		.clear-fix{
+			clear : both;
+		}
+</style>
+</head>
+<body>
+ 
+ 	<div class="header-container"><img src="umd_logo.png" alt=" ">
+			
+	
+<div class="container">
+	<div id="content">
+<br>
+<br>
+		<h3 class="level-1 rectangle">President</h3> <!--first top node -->
+   
+	<ol class="level-2-level">
+		<li>
+			<h3 class="level-2 rectangle">VP Marketing</h3>
+		</li>
+		<li>
+			<h3 class="level-2 rectangle">VP Sales</h3>
+		</li>
+		<li>
+			<h3 class="level-2 rectangle">VP Production</h3>
+		</li>
+</ol>
+  
+	<ol class="level-2-level">
+		<li>
+    ...
+    
+	<ol class="level-3-level">
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+    </ol>
+  </li>
+  
+   <li>
+    ...
+    <ol class="level-3-level">
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+    </ol>
+		
+  </li>
+  
+  <li>
+    ...
+    <ol class="level-3-level">
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+      <li>
+        <h3 class="level-3 rectangle">Manager</h3>
+      </li>
+    </ol>	
+  </li>  
+</ol>
+
+
+  <li>
+     ... 
+    <ol class="level-3-level">
+      <li>           
+        <ol class="level-4-level">
+          <li>
+            <h3 class="level-4 rectangle">You</h3>
+          </li>          
+        </ol>
+      </li>    
+    </ol>
+  </li>
+  
+</ol>
+
+
+</div>
+  <!--sidebar code adds here -->
+  <aside id="sidemenu">
+								
+				<ul>
+					
+				  	<li><a href="#">Payroll Information</li><br>
+					<li><a href="#">Performance Appraisal</li><br>
+					<li><a href="#">TimeSheet</li><br>
+					<li><a href="#">Leave Management</li><br>
+					<li><a href="#">Health Benifit</li><br>
+					<li><a href="#">Organization Chart</li><br>
+					<li><a href="#">Access Management</li><br>
+					<li><a href="#">Career Dedelopment</li><br>
+					<li><a href="#">My Profile</li><br>
+					<li><a href="#">Expense Reimbursment</li><br>
+					<li><a href="#">Retirment Planning</li><br>
+					<li><a href="#">Ticket Management</li><br>
+					<li><a href="#">Document</li><br>
+					<li><a href="#">Feedback</li><br>
+					
+				</ul>
+			</aside>
+	<aside id="rightsidemenu"> 
+	 		
+	</aside>
+  
+  <div class="footer-container">
+	<footer> <div>Copyright &#169; UMD All Right Reserved</div></footer>
+  </div>
+  
+  </body>
+  </html>
