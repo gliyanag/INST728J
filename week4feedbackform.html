@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week 4</title>
+
+<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.cId.value == "" ) {
+            alert( "Please provide your Case number!" );
+            document.myForm.cId.focus() ;
+            return false;
+			}
+        if( document.myForm.cSubject.value == "" ) {
+            alert( "Please provide the Subject!" );
+            document.myForm.cSubject.focus() ;
+            return false;
+         }
+         		 
+		 return( true );
+      }
+   //-->
+</script>      
+</head>
+<head>
+<style>
+
+
+.container{
+			width:100%;
+			margin:auto;
+			background-color: beige;
+			height :100%;
+			
+		}
+
+#content{
+			width : 80%;
+			float : right; <!--Place texts on the right side -->
+			height : 100%;
+			background-color:beige;
+			         
+						
+		}
+	
+#sidemenu{
+			width : 20%;
+			float : left;
+			background-color : #800000;
+            height : 100%; 
+			padding-bottom: 100%; <!--600px-->
+										
+		}	
+		
+#sidemenu li a{
+		color:yellow;
+		}
+		
+#rightsidemenu{
+			width : 20%;
+			float : right;
+			background-color : #800000;
+            height : 100%; 
+			padding-bottom: 100%; 
+}		
+
+.footer-container{
+			clear : both;
+			background-color : beige;
+			text-align:center;
+			padding : 10px;
+			
+		}
+		
+		.clear-fix{
+			clear : both;
+		}
+</style>
+</head>
+<body>
+<!--<form name="myForm" method="post" action="thankyou.html"> -->
+<form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+<table width="60%" align="left" cellpadding="1" cellspacing="0" bgcolor="#F8F0E0">
+  
+ 	<div class="header-container"><img src="umd_logo.png" alt=" ">
+			
+	</div>
+
+<div class="container">
+	<div id="content">
+
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+    
+		<tr> 
+			<td><pre>                </pre></td>
+			<td> <div>
+	<!--<div id="content">
+	<!-- Content Area-->
+			<br>
+			<header><strong><h3>Please Complete the Following form</h3></strong></header>
+			<br>	
+
+ 
+<!--style="background-color:#F8F1F4" -->
+			<strong><font color="#9B3333">FEEDBACK</font></strong>
+			</div> </td>
+		</tr> 
+
+	<tr>
+		<td></td>
+	</tr>
+   <div>
+   <div style="background-color:#F8F1F4">
+	<tr>
+		<td> </td>
+		<td><label for="CaseID" align="left">CaseID:</label></td>
+		<!--<td align ="left">CaseID</td>  -->
+		<td><input type="number" name="cId"/></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><label for="Subject">Subject:<span aria-hidden="true" style="color:red" >*</span></label> </td>
+		<td><input type="text" name="cSubject" size="75"/></td>
+	</tr>
+
+	<tr>
+		<td> </td>
+		<td valign="top"><label for="Comment">Comment:<span style="color:red">*</span></label></td>
+		<td><textarea rows = "10" cols = "30" name = "Comment"> </textarea></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><label for="submit"></label> </td>
+		<td><input type="submit" value="Submit"> </td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+</div>
+  <!--sidebar code adds here -->
+  <aside id="sidemenu">
+								
+				<ul>
+					
+				  	<li><a href="#">Payroll Information</li><br>
+					<li><a href="#">Performance Appraisal</li><br>
+					<li><a href="#">TimeSheet</li><br>
+					<li><a href="#">Leave Management</li><br>
+					<li><a href="#">Health Benifit</li><br>
+					<li><a href="#">Organization Chart</li><br>
+					<li><a href="#">Access Management</li><br>
+					<li><a href="#">Career Dedelopment</li><br>
+					<li><a href="#">My Profile</li><br>
+					<li><a href="#">Expense Reimbursment</li><br>
+					<li><a href="#">Retirment Planning</li><br>
+					<li><a href="#">Ticket Management</li><br>
+					<li><a href="#">Document</li><br>
+					<li><a href="#">Feedback</li><br>
+					
+				</ul>
+			</aside>
+	<aside id="rightsidemenu"> 
+	 		
+	</aside>
+  <!--end sidebar code -->
+
+<!--</form> -->
+</table>
+</form> 
+<!--footer adds here-->
+  <div class="footer-container">
+	<footer> <div>Copyright &#169; UMD All Right Reserved</div></footer>
+  </div>
+  <!--footer end here -->
+  </body>
+  </html>
