@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week 4</title>
+
+<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.cId.value == "" ) {
+            alert( "Please provide your Case number!" );
+            document.myForm.cId.focus() ;
+            return false;
+			}
+        if( document.myForm.cSubject.value == "" ) {
+            alert( "Please provide the Subject!" );
+            document.myForm.cSubject.focus() ;
+            return false;
+         }
+         		 
+		 return( true );
+      }
+   //-->
+</script>      
+</head>
+<head>
+<style>
+.container{
+			width:100%;
+			margin:auto;
+			background-color: beige;
+			height :100%;			
+		}
+
+#content{
+			width : 100%;
+			float : right; 
+			height : 100%;
+			background-color:beige;
+			         						
+		}
+		
+#content img {
+	padding-top: 20px;
+	padding-left: 40px;
+	}
+	
+#sidemenu{
+			width : 20%;
+			float : left;
+			background-color : #800000;
+            height : 100%; 
+			padding-bottom: 100%; 
+										
+		}	
+		
+#sidemenu li a{
+		color:yellow;
+		}
+		
+#rightsidemenu{
+			width : 20%;
+			float : right;
+			background-color : #800000;
+            height : 100%; 
+			padding-bottom: 128%; 
+}		
+
+.footer-container{
+			clear : both;
+			background-color : beige;
+			text-align:center;
+			padding : 10px;
+			
+		}
+		
+		.clear-fix{
+			clear : both;
+		}
+</style>
+</head>
+<body>
+ 
+ 	<div class="header-container"><img src="umd_logo.png" alt=" ">
+			
+	</div>
+
+<div class="container">
+	<div id="content">
+		<img src="organisationchart.png" alt="organisation chart" width="1000" height="600"> 
+  <aside id="sidemenu">
+								
+				<ul>
+					
+				  	<li><a href="#">Payroll Information</li><br>
+					<li><a href="#">Performance Appraisal</li><br>
+					<li><a href="#">TimeSheet</li><br>
+					<li><a href="#">Leave Management</li><br>
+					<li><a href="#">Health Benifit</li><br>
+					<li><a href="#">Organization Chart</li><br>
+					<li><a href="#">Access Management</li><br>
+					<li><a href="#">Career Dedelopment</li><br>
+					<li><a href="#">My Profile</li><br>
+					<li><a href="#">Expense Reimbursment</li><br>
+					<li><a href="#">Retirment Planning</li><br>
+					<li><a href="#">Ticket Management</li><br>
+					<li><a href="#">Document</li><br>
+					<li><a href="#">Feedback</li><br>
+					
+				</ul>
+			</aside>
+	<aside id="rightsidemenu"> 
+	 		
+	</aside>
+</table>
+</form> 
+  <div class="footer-container">
+	<footer> <div>Copyright &#169; UMD All Right Reserved</div></footer>
+  </div>
+  </body>
+  </html>
